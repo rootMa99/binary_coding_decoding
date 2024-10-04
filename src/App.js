@@ -4,6 +4,9 @@ import BinaryConverter from './components/BinaryConverter';
 import VoiceSearch from './components/VoiceSearch';
 
 function App() {
+  const handleSearch = (query) => {
+    console.log("Searching for:", query);
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -21,7 +24,8 @@ function App() {
         </a>
       </header>
       <BinaryConverter />
-      <VoiceSearch />
+      <h1>Voice search</h1>
+      <VoiceSearch onSearch={handleSearch}/>
     </div>
   );
 }
