@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import BinaryConverter from './components/BinaryConverter';
+import VoiceSearch from './components/VoiceSearch';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </a>
       </header>
       <BinaryConverter />
+      <VoiceSearch />
     </div>
   );
 }
